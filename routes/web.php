@@ -18,4 +18,5 @@ Route::group(['middleware' => ['authCheck']], function () {
     Route::post('/import',[UserController::class,'importUser'])->name('import-user');
     Route::view('manual-add','manual_add_user')->name('manually-add-view');
     Route::post('add-user',[UserController::class,'addUsers'])->name('add-users');
+    // dummy
 });
